@@ -71,14 +71,13 @@ If you want to also make changes to Danger JS, and use the local version to make
 # from Peril
 cd ..
 git clone https://github.com/danger/danger-js.git
+cd danger-js
 yarn install
 yarn link danger
 
-# Then start the file watcher in a new tab
-yarn start build:watch
-
 # Then in Peril again
 cd ../Peril
+yarn start build:watch
 yarn link danger
 ```
 
